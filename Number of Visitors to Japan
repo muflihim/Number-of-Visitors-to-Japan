@@ -6,27 +6,29 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-#importing chart based on month
+## Importing chart based on month
 df_month = pd.read_csv('/kaggle/input/japannumber-of-visitors-to-japan/Number of foreign visitors to Japan by month_ .csv')
 df_month
 
-#importing chart based on year
+## Importing chart based on year
 df_year = pd.read_csv('/kaggle/input/japannumber-of-visitors-to-japan/Number of foreign visitors to Japan by year_ .csv')
 df_year
 
-#plotting graph by 
+## Plotting graph by month 
 df_month
 df_month. plot()
 
+## Plotting graph by year
 df_year
 df_year. plot()
+
 
 df_month.columns
 df_year.columns
 df_month.describe(). round ()
 
 
-##SHOWING THE NUMBER OF VISITS PEAR YEAR 
+## Number of visits per year 
 df_y = df_year.set_index('Year')
 df_y
 plt.figure(figsize=(15,5)) 
@@ -34,14 +36,14 @@ plt.xticks(rotation=90)
 sns.lineplot(data=df_y)
 
 
-##TOP 10 VISITORS PER YEAR
+## Top 10 Visitors 
 top_10 = df_month['Visitor'].max()
 top_10
 
 max_visitors = df_month.loc[df_month['Visitor'] ==  top_10]
 max_visitors
 
-##BOTTOM 10 VISITORS PER YEAR
+## Bottom 10 Visitors
 least_10 = df_month['Visitor'].min()
 least_10
 min_visitors = df_month.loc[df_month['Visitor'] ==  least_10]
