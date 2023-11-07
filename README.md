@@ -12,3 +12,6 @@ Data: Tableau sample data
 Audience: Sales executives
 Purpose: Identify factors behind low profit ratio in order to boost profits
 In this dashboard, I used a Tableau dataset containing sample sales data from 2018 to 2021. Though the sample dataset provides a wider overview of sales data, I saw an opportunity to strategically visualize clear, actionable insights to my fictional audience of sales executives. The dashboard allows my audience to immediately pinpoint the geographical, categorical, and seasonal factors that are leading to profit loss — providing the guided insight that allows them to impact change on their team.
+
+
+dndkjdkld
